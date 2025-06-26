@@ -1,0 +1,6 @@
+
+creating the application int the current folder
+npx create-next-app@14.0.1
+
+A new version of `create-next-app` is available!
+You can update by running: npm i -g create-next-app
