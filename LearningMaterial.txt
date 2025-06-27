@@ -1,6 +1,25 @@
 
-creating the application int the current folder
+creating the application int the current folder with the specific version
 npx create-next-app@14.0.1
+-----------------
+npx create-next-app@15.0.2
+Need to install the following packages:
+  create-next-app@15.0.2
+Ok to proceed? (y) y
+√ What is your project named? ... first-nextjs-app
+√ Would you like to use TypeScript? ... No / Yes
+√ Would you like to use ESLint? ... No / Yes
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like your code inside a `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to use Turbopack for next dev? ... No / Yes
+√ Would you like to customize the import alias (@/* by default)? ... No / Yes
 
 A new version of `create-next-app` is available!
 You can update by running: npm i -g create-next-app
+-------------
+The most straightforward way to upgrade Next.js is to use their official codemod. This tool automates many of the necessary changes.
+Open your terminal in your project's root directory and run the following command:
+
+Bash
+npx @next/codemod@canary upgrade latest
