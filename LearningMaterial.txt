@@ -23,3 +23,13 @@ Open your terminal in your project's root directory and run the following comman
 
 Bash
 npx @next/codemod@canary upgrade latest
+
+To create app in the current directory
+npx create-next-app@latest ./
+
+
+upgrading from 15.0.2 to 15.1.2 involves these below 
+
+npm install react@19.0.0-rc-de68d2f4-20241204 react-dom@19.0.0-rc-de68d2f4-20241204H
+
+npm install next@15.1.2
