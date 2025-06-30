@@ -48,6 +48,10 @@ export const getReviewById = async (language: string, bookSlug: string, reviewId
       { id: 'review1', author: 'Alice Smith', rating: 5, text: 'A truly captivating novel! Highly recommend this masterpiece. The plot twists kept me on the edge of my seat from beginning to end. A must-read for anyone who loves a good story!' },
       { id: 'review2', author: 'Bob Johnson', rating: 4, text: 'Enjoyed it, but some parts felt a bit slow. The characters were well-developed, but the pacing could have been better in the middle section. Still a solid read overall.' },
     ],
+   'englishbooks-book2':  [
+        { id: 'review1', author: 'Ananth1', rating: 5, text: 'A truly captivating novel! Highly recommend.' },
+        { id: 'review2', author: 'Ananth2', rating: 2, text: 'Enjoyed it, but some parts felt a bit slow.' },
+      ],
     'tamilbooks-kural': [
       { id: 'review-a', author: 'Priya Rajan', rating: 5, text: 'Timeless wisdom that resonates deeply even today. Thirukkural offers profound insights into life, ethics, and morality, relevant for all ages.' },
       { id: 'review-b', author: 'Kumar Devan', rating: 5, text: 'A must-read for everyone, regardless of background. The teachings are universal and inspiring. I find myself revisiting its verses frequently.' },

@@ -48,6 +48,11 @@ const getReviewsForBook = async (language: string, bookSlug: string): Promise<Re
         { reviewId: 'review1', author: 'Alice Smith', rating: 5, text: 'A truly captivating novel! Highly recommend.' },
         { reviewId: 'review2', author: 'Bob Johnson', rating: 4, text: 'Enjoyed it, but some parts felt a bit slow.' },
       ];
+      case 'englishbooks-book2':
+        return [
+          { reviewId: 'review1', author: 'Ananth1', rating: 5, text: 'A truly captivating novel! Highly recommend.' },
+          { reviewId: 'review2', author: 'Ananth2', rating: 2, text: 'Enjoyed it, but some parts felt a bit slow.' },
+        ];
     case 'tamilbooks-kural':
       return [
         { reviewId: 'review-a', author: 'Priya Rajan', rating: 5, text: 'Timeless wisdom that resonates deeply.' },
