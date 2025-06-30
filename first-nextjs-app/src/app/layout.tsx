@@ -24,10 +24,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      {/* Assuming geistSans and geistMono are imported and used as className like in your example */}
+      <body className={`flex flex-col min-h-screen font-inter antialiased`}>
+        {/* Header Section */}
+        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 shadow-lg rounded-b-lg">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-3xl font-bold tracking-tight">
+              Your Awesome App
+            </h1>
+            <nav>
+              <ul className="flex space-x-6">
+                <li><a href="/" className="hover:text-blue-200 transition duration-300">Home</a></li>
+                <li><a href="#" className="hover:text-blue-200 transition duration-300">Features</a></li>
+                <li><a href="#" className="hover:text-blue-200 transition duration-300">Pricing</a></li>
+                <li><a href="/books" className="hover:text-blue-200 transition duration-300">Books</a></li>
+                <li><a href="#" className="hover:text-blue-200 transition duration-300">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        {/* Main Content Area */}
+        <main className="flex-grow container mx-auto p-4 bg-gray-50 rounded-lg shadow-inner my-4">
+          {children} {/* This is the actual children prop */}
+        </main>
+
+        {/* Footer Section */}
+        <footer className="bg-gray-800 text-white p-4 shadow-inner rounded-t-lg mt-auto">
+          <div className="container mx-auto text-center text-sm">
+            <p>&copy; {new Date().getFullYear()} Your Awesome App. All rights reserved.</p>
+            <ul className="flex justify-center space-x-4 mt-2">
+              <li><a href="#" className="hover:text-gray-400 transition duration-300">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-gray-400 transition duration-300">Terms of Service</a></li>
+            </ul>
+          </div>
+        </footer>
       </body>
     </html>
   );
